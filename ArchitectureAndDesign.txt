@@ -1,11 +1,11 @@
-SOLID  ----------------------MASTER CHANGE ---------------------
+SOLID
 SOLID is an acronym for the first five object-oriented design (OOD) principles. SOLID stands for:
 •	S - Single-responsibility Principle
 •	Open-closed Principle
 •	L - Liskov Substitution Principle
 •	I - Interface Segregation Principle
 •	D - Dependency Inversion Principle
-Single-Responsibility Principle
+Single-Responsibility Principle   ----------------------MASTER CHANGE ---------------------
 The single responsibility states that every class must perform a single functionality. Implementation of multiple functionalities in a single class mashup the code and if any modification is required may affect the whole class.
 Open-Closed Principle
 The open-closed principle states that according to new requirements the module should be open for extension but closed for modification. The extension allows us to implement new functionality to the module. This prevents someone from changing already tried and tested code.
