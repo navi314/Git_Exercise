@@ -7,7 +7,7 @@ SOLID is an acronym for the first five object-oriented design (OOD) principles. 
 •	D - Dependency Inversion Principle
 Single-Responsibility Principle   ----------------------MASTER CHANGE ---------------------
 The single responsibility states that every class must perform a single functionality. Implementation of multiple functionalities in a single class mashup the code and if any modification is required may affect the whole class.
-Open-Closed Principle
+Open-Closed Principle --- issue_4321 ----------------
 The open-closed principle states that according to new requirements the module should be open for extension but closed for modification. The extension allows us to implement new functionality to the module. This prevents someone from changing already tried and tested code.
 Liskov Substitution Principle
 It applies to inheritance in such a way that the derived classes must be completely substitutable for their base classes. In other words, if class A is a subtype of class B, then we should be able to replace B with A without interrupting the behavior of the program.
