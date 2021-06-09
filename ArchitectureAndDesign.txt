@@ -9,7 +9,7 @@ Single-Responsibility Principle   ----------------------MASTER CHANGE ----------
 The single responsibility states that every class must perform a single functionality. Implementation of multiple functionalities in a single class mashup the code and if any modification is required may affect the whole class.
 Open-Closed Principle --- issue_4321 ----------------
 The open-closed principle states that according to new requirements the module should be open for extension but closed for modification. The extension allows us to implement new functionality to the module. This prevents someone from changing already tried and tested code.
-Liskov Substitution Principle
+Liskov Substitution Principle  --------------- issue_4321A ------------
 It applies to inheritance in such a way that the derived classes must be completely substitutable for their base classes. In other words, if class A is a subtype of class B, then we should be able to replace B with A without interrupting the behavior of the program.
 Interface Segregation Principle
 The principle states that the larger interfaces split into smaller ones. Because the implementation classes use only the methods that are required. We should not force the client to use the methods that they do not want to use. The goal of the interface segregation principle is similar to the single responsibility principle.
