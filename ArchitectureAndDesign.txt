@@ -1,4 +1,4 @@
-SOLID
+SOLID ----------------CHANGE------------------------------
 SOLID is an acronym for the first five object-oriented design (OOD) principles. SOLID stands for:
 •	S - Single-responsibility Principle
 •	Open-closed Principle
