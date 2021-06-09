@@ -1,0 +1,74 @@
+SOLID
+SOLID is an acronym for the first five object-oriented design (OOD) principles. SOLID stands for:
+•	S - Single-responsibility Principle
+•	Open-closed Principle
+•	L - Liskov Substitution Principle
+•	I - Interface Segregation Principle
+•	D - Dependency Inversion Principle
+Single-Responsibility Principle
+The single responsibility states that every class must perform a single functionality. Implementation of multiple functionalities in a single class mashup the code and if any modification is required may affect the whole class.
+Open-Closed Principle
+The open-closed principle states that according to new requirements the module should be open for extension but closed for modification. The extension allows us to implement new functionality to the module. This prevents someone from changing already tried and tested code.
+Liskov Substitution Principle
+It applies to inheritance in such a way that the derived classes must be completely substitutable for their base classes. In other words, if class A is a subtype of class B, then we should be able to replace B with A without interrupting the behavior of the program.
+Interface Segregation Principle
+The principle states that the larger interfaces split into smaller ones. Because the implementation classes use only the methods that are required. We should not force the client to use the methods that they do not want to use. The goal of the interface segregation principle is similar to the single responsibility principle.
+Dependency Inversion Principle
+The principle states that we must use abstraction (abstract classes and interfaces) instead of concrete implementations. High-level modules should not depend on the low-level module, but both should depend on the abstraction. Because the abstraction does not depend on detail, but the detail depends on abstraction.
+Encapsulate What Changes
+There is only one thing that is constant in the software field and that is “Change”, So, encapsulate the code you expect or suspect to be changed in the future. One of the examples to use this is in Java, following the principle of making variables and methods private by default and increasing access step by step. 
+Composition
+Composition is a way of describing a reference between two or more classes using an instance variable and an instance should be created before it is used.
+Favor Composition over Inheritance
+Composition allows changing the behavior of a class at run-time by setting property during run-time and by using Interfaces to compose a class we use polymorphism which provides flexibility to replace with better implementation any time.
+Programming for Interface not implementation
+A programmer should always program for the interface and not for implementation this will lead to flexible code which can work with any new implementation of the interface. In concrete words, you should use interface type on variables, return types of a method, or argument type of methods in Java-like using SuperClass type to store object rather than using SubClass.
+Delegation principles
+Don’t do all stuff by yourself, delegate it to the respective class. The key benefit of this design principle is no duplication of code and pretty easy to modify behavior. Event delegation is another example of this principle, where an event is delegated to handlers for handling.
+Design Patterns
+Design patterns represent the best practices used by experienced object-oriented software developers. Design patterns are solutions to general problems that software developers faced during software development. These solutions were obtained by trial and error by numerous software developers over quite a substantial period.
+MVC Design Pattern
+The Model View Controller (MVC) design pattern specifies that an application consists of a data model, presentation information, and control information. The pattern requires that each of these is separated into different objects.
+•	The Model contains only the pure application data, it contains no logic describing how to present the data to a user.
+•	The View presents the model’s data to the user. The view knows how to access the model’s data, but it does not know what this data means or what the user can do to manipulate it.
+•	The Controller exists between the view and the model. It listens to events triggered by the view (or another external source) and executes the appropriate reaction to these events. In most cases, the reaction is to call a method on the model.
+KISS
+“Keep It Simple, Stupid” – The KISS programming is important. Try to keep this in your mind in your endeavors. The simpler your code is, the simpler it will be to maintain it in the future. This will be greatly appreciated by anyone else that needs to examine your code in the future.
+YAGNI
+“You Aren’t Gonna Need It” – Sometimes, as developers, we try to think way ahead, into the future of the project, coding some extra features “just in case we need them” or thinking “we will eventually need them”. Just one word: Wrong! You didn’t need it, you don’t need it, and in most of the cases… “You Aren’t Gonna Need It”.
+DRY
+“Don’t Repeat Yourself” – How many times do you see that there are similar codes in different parts of a system? The DRY principle, formulated by Andrew Hunt and David Thomas in their book The Pragmatic Programmer, states that “every piece of knowledge must have a single, unambiguous, authoritative representation within a system."  In other words, you must try to maintain the behavior of the functionality of the system in a single piece of code.
+On the other hand, when the DRY principle is not followed, this is known as WET solutions, which stands for either Write Everything Twice or We Enjoy Typing.
+Factory Pattern
+In Factory pattern, we create an object without exposing the creation logic to the client and refer to the newly created object using a common interface.
+To create this pattern, we must first create an Interface then create the classes using that interface. For the last step create the class that is going to generate the class depending on the type of information passed. 
+Abstract Factory Pattern
+Abstract Factory patterns work around a super-factory which creates other factories. This factory is also called a factory of factories. In the Abstract Factory pattern, an interface is responsible for creating a factory of related objects without explicitly specifying their classes. Each generated factory can give the objects as per the Factory pattern.
+Singleton Pattern
+This pattern involves a single class that is responsible to create an object while making sure that only a single object gets created. This class provides a way to access its only object which can be accessed directly without the need to instantiate the object of the class. This type of pattern is often used in classes where we only want one instance of the class, for example in a class used to send data over Bluetooth.
+Builder Pattern
+Builder pattern builds a complex object using simple objects and using a step-by-step approach. This type of pattern lets us create classes that have a lot of methods or that are complex. With this pattern, we can easily build a lot of objects.
+Prototype Pattern
+Prototype pattern refers to creating duplicate objects while keeping performance in mind. This pattern involves implementing a prototype interface that tells to create a clone of the current object. This pattern is used when the creation of an object directly is costly. For example, an object is to be created after a costly database operation. We can cache the object, returns its clone on the next request, and update the database as and when needed thus reducing database calls.
+Adapter Pattern
+The adapter pattern works as a bridge between two incompatible interfaces. This pattern involves a single class that is responsible to join functionalities of independent or incompatible interfaces. A real-life example could be a case of a card reader which acts as an adapter between the memory card and a laptop. You plug the memory card into the card reader and card reader into the laptop so that the memory card can be read via laptop.
+Bridge Pattern
+The bridge pattern is used when we need to decouple an abstraction from its implementation so that the two can vary independently. This pattern involves an interface that acts as a bridge which makes the functionality of concrete classes independent from interface implementer classes. Both types of classes can be altered structurally without affecting each other. This type of pattern can be used when we have classes that need similar functions but have differences between them.
+Filter Pattern
+Filter pattern or Criteria pattern is a design pattern that enables developers to filter a set of objects using different criteria and chaining them in a decoupled way through logical operations. This can be used when we have a lot of criteria to filter the data.
+Composite Pattern
+A composite pattern is used where we need to treat a group of objects similar to a single object. Composite pattern composes objects in terms of a tree structure to represent part as well as a whole hierarchy. This pattern creates a class that contains a group of its objects. This class provides ways to modify its group of the same objects. With this pattern, we can create a class that has a list of objects of the same class and make a hierarchy from the objects.
+Decorator Pattern
+The Decorator pattern allows a user to add new functionality to an existing object without altering its structure. This pattern creates a decorator class that wraps the original class and provides additional functionality keeping class methods signature intact. This is an easy way of adding additional functionality to a class without changing the original class.
+Facade Pattern
+The Facade pattern hides the complexities of the system and provides an interface to the client using which the client can access the system. This pattern involves a single class that provides simplified methods required by the client and delegates calls to methods of existing system classes. This makes the Facade class have the most crucial part of the program for the user.
+Flyweight Pattern
+Flyweight pattern is primarily used to reduce the number of objects created and to decrease memory footprint and increase performance. Flyweight pattern tries to reuse already existing similar kind objects by storing them and creates new objects when no matching object is found.
+Layered Architecture
+The most common architecture pattern is the layered architecture pattern, otherwise known as the n-tier architecture pattern. This pattern is the de facto standard for most Java EE applications and therefore is widely known by most architects, designers, and developers.
+Components within the layered architecture pattern are organized into horizontal layers, each layer performing a specific role within the application (e.g., presentation logic or business logic). Although the layered architecture pattern does not specify the number and types of layers that must exist in the pattern, most layered architectures consist of four standard layers: presentation, business, persistence, and database.
+Each layer of the layered architecture pattern has a specific role and responsibility within the application. For example, a presentation layer would be responsible for handling all user interface and browser communication logic, whereas a business layer would be responsible for executing specific business rules associated with the request. Each layer in the architecture forms an abstraction around the work that needs to be done to satisfy a particular business request.
+One of the powerful features of the layered architecture pattern is the separation of concerns among components. Components within a specific layer deal only with logic that pertains to that layer. For example, components in the presentation layer deal only with presentation logic, whereas components residing in the business layer deal only with business logic. This type of component classification makes it easy to build effective roles and responsibility models into your architecture, and also makes it easy to develop, test, govern, and maintain applications using this architecture pattern due to well-defined component interfaces and limited component scope.
+Key Concepts
+Each of the layers in the architecture is marked as being closed. This is a very important concept in the layered architecture pattern. A closed layer means that as a request moves from layer to layer, it must go through the layer right below it to get to the next layer below that one. 
+The layers of isolation concept mean that changes made in one layer of the architecture generally don’t impact or affect components in other layers: the change is isolated to the components within that layer, and possibly another associated layer. The layers of isolation concept also mean that each layer is independent of the other layers, thereby having little or no knowledge of the inner workings of other layers in the architecture.
